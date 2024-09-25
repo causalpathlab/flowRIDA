@@ -1,1 +1,1 @@
-# GCAN
+# Gene Celltype Attention Network (GCAN)
