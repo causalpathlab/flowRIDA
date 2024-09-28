@@ -1,6 +1,6 @@
 import torch; torch.manual_seed(0)
 import torch.nn as nn
-from distribution import _multinomial as st
+from ..distribution import _multinomial as st
 import logging
 logger = logging.getLogger(__name__)
 
@@ -76,11 +76,10 @@ class ETM(nn.Module):
 		bm,bv,theta,beta = self.decoder(zz)
 		return m,v,bm,bv,theta,beta
 
-def train(etm,data,epochs,l_rate,batch_size):
+def train(etm,data,epochs,l_rate):
 	logger.info('Starting training....')
 	opt = torch.optim.Adam(etm.parameters(),lr=l_rate)
 	loss_values = []
-	loss_values_sep = []
 	data_size = data.dataset.shape[0]
 	for epoch in range(epochs):
 		loss = 0
@@ -112,9 +111,11 @@ def train(etm,data,epochs,l_rate,batch_size):
 		if epoch % 10 == 0:
 			logger.info('====> Epoch: {} Average loss: {:.4f}'.format(epoch, loss/len(data)))
 
-		loss_values.append(loss/len(data))
-		loss_values_sep.append((loss_ll/len(data),loss_kl/len(data),loss_klb/len(data)))
+		loss_values.append([loss/len(data),loss_ll/len(data),loss_kl/len(data),loss_klb/len(data)])
 
 
-	return loss_values,loss_values_sep
+	return loss_values
 
+def predict_batch(model,x_sc,y):
+	m,v,bm,bv,theta,beta =  model(x_sc)
+	return theta,beta,y
