@@ -28,7 +28,7 @@ params = {
     "latent_dim": 15,
     "layers": [1000, 500, 100, 15],
     "learning_rate": 0.001,
-    "epochs": 1000,
+    "epochs": 100,
     "batch_size": 128,
 }
 
