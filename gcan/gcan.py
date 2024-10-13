@@ -6,6 +6,8 @@ import torch
 from . import datautil as dutil
 from . import model as md
 
+from tqdm import tqdm
+
 
 class gcan(object):
     def __init__(self, data, wdir):
@@ -38,6 +40,7 @@ class gcan(object):
         data = dutil.nn_load_data(
             self.data, self.nn_params["device"], self.nn_params["batch_size"]
         )
+        
 
         loss = md.train(
             gcan_model, data, self.nn_params["epochs"], self.nn_params["learning_rate"]

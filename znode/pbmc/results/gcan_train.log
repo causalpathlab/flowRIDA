@@ -147,3 +147,187 @@
   )
 )
 2024-09-25 20:34:36 INFO     Fontsize 0.00 < 1.0 pt not allowed by FreeType. Setting fontsize = 1 pt
+2024-10-08 21:54:05 INFO     Starting training...
+2024-10-08 21:54:05 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [1000, 500, 100, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
+2024-10-08 21:54:05 INFO     ETM(
+  (encoder): ETMEncoder(
+    (fc): Stacklayers(
+      (layers): ModuleList(
+        (0): Linear(in_features=1000, out_features=1000, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=1000, out_features=500, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=500, out_features=100, bias=True)
+        (5): ReLU()
+        (6): Linear(in_features=100, out_features=15, bias=True)
+        (7): ReLU()
+      )
+    )
+    (z_mean): Linear(in_features=15, out_features=15, bias=True)
+    (z_lnvar): Linear(in_features=15, out_features=15, bias=True)
+  )
+  (decoder): ETMDecoder(
+    (lsmax): LogSoftmax(dim=-1)
+  )
+)
+2024-10-08 21:54:05 INFO     Starting training....
+2024-10-08 21:54:12 INFO     ====> Epoch: 0 Average loss: 6407.0958
+2024-10-08 21:54:27 INFO     ====> Epoch: 10 Average loss: 6244.5227
+2024-10-08 21:54:41 INFO     ====> Epoch: 20 Average loss: 6137.6718
+2024-10-08 21:54:55 INFO     ====> Epoch: 30 Average loss: 5997.0670
+2024-10-08 21:55:09 INFO     ====> Epoch: 40 Average loss: 6004.5780
+2024-10-08 21:55:23 INFO     ====> Epoch: 50 Average loss: 5904.2170
+2024-10-08 21:55:37 INFO     ====> Epoch: 60 Average loss: 5965.1542
+2024-10-08 21:55:52 INFO     ====> Epoch: 70 Average loss: 5943.6049
+2024-10-08 21:56:06 INFO     ====> Epoch: 80 Average loss: 5956.3819
+2024-10-13 14:59:38 INFO     Starting training...
+2024-10-13 14:59:38 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [1000, 500, 100, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
+2024-10-13 14:59:38 INFO     ETM(
+  (encoder): ETMEncoder(
+    (fc): Stacklayers(
+      (layers): ModuleList(
+        (0): Linear(in_features=1000, out_features=1000, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=1000, out_features=500, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=500, out_features=100, bias=True)
+        (5): ReLU()
+        (6): Linear(in_features=100, out_features=15, bias=True)
+        (7): ReLU()
+      )
+    )
+    (z_mean): Linear(in_features=15, out_features=15, bias=True)
+    (z_lnvar): Linear(in_features=15, out_features=15, bias=True)
+  )
+  (decoder): ETMDecoder(
+    (lsmax): LogSoftmax(dim=-1)
+  )
+)
+2024-10-13 14:59:38 INFO     Starting training....
+2024-10-13 14:59:44 INFO     ====> Epoch: 0 Average loss: 6407.0958
+2024-10-13 14:59:58 INFO     ====> Epoch: 10 Average loss: 6244.5227
+2024-10-13 15:00:12 INFO     ====> Epoch: 20 Average loss: 6137.6718
+2024-10-13 15:00:26 INFO     ====> Epoch: 30 Average loss: 5997.0670
+2024-10-13 15:00:40 INFO     ====> Epoch: 40 Average loss: 6004.5780
+2024-10-13 15:00:54 INFO     ====> Epoch: 50 Average loss: 5904.2170
+2024-10-13 15:01:07 INFO     ====> Epoch: 60 Average loss: 5965.1542
+2024-10-13 15:01:21 INFO     ====> Epoch: 70 Average loss: 5943.6049
+2024-10-13 15:01:36 INFO     ====> Epoch: 80 Average loss: 5956.3819
+2024-10-13 15:01:50 INFO     ====> Epoch: 90 Average loss: 5965.5781
+2024-10-13 15:04:47 INFO     Starting training...
+2024-10-13 15:04:47 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [1000, 500, 100, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
+2024-10-13 15:04:47 INFO     ETM(
+  (encoder): ETMEncoder(
+    (fc): Stacklayers(
+      (layers): ModuleList(
+        (0): Linear(in_features=1000, out_features=1000, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=1000, out_features=500, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=500, out_features=100, bias=True)
+        (5): ReLU()
+        (6): Linear(in_features=100, out_features=15, bias=True)
+        (7): ReLU()
+      )
+    )
+    (z_mean): Linear(in_features=15, out_features=15, bias=True)
+    (z_lnvar): Linear(in_features=15, out_features=15, bias=True)
+  )
+  (decoder): ETMDecoder(
+    (lsmax): LogSoftmax(dim=-1)
+  )
+)
+2024-10-13 15:04:47 INFO     Starting training....
+2024-10-13 15:04:52 INFO     ====> Epoch: 0 Average loss: 6407.0958
+2024-10-13 15:05:05 INFO     ====> Epoch: 10 Average loss: 6244.5227
+2024-10-13 15:05:19 INFO     ====> Epoch: 20 Average loss: 6137.6718
+2024-10-13 15:05:36 INFO     ====> Epoch: 30 Average loss: 5997.0670
+2024-10-13 15:05:50 INFO     ====> Epoch: 40 Average loss: 6004.5780
+2024-10-13 15:06:45 INFO     Starting training...
+2024-10-13 15:06:45 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [1000, 500, 100, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
+2024-10-13 15:06:45 INFO     ETM(
+  (encoder): ETMEncoder(
+    (fc): Stacklayers(
+      (layers): ModuleList(
+        (0): Linear(in_features=1000, out_features=1000, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=1000, out_features=500, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=500, out_features=100, bias=True)
+        (5): ReLU()
+        (6): Linear(in_features=100, out_features=15, bias=True)
+        (7): ReLU()
+      )
+    )
+    (z_mean): Linear(in_features=15, out_features=15, bias=True)
+    (z_lnvar): Linear(in_features=15, out_features=15, bias=True)
+  )
+  (decoder): ETMDecoder(
+    (lsmax): LogSoftmax(dim=-1)
+  )
+)
+2024-10-13 15:06:45 INFO     Starting training....
+2024-10-13 15:06:49 INFO     ====> Epoch: 0 Average loss: 6407.0958
+2024-10-13 15:07:03 INFO     ====> Epoch: 10 Average loss: 6244.5227
+2024-10-13 15:07:18 INFO     ====> Epoch: 20 Average loss: 6137.6718
+2024-10-13 15:14:35 INFO     Starting training...
+2024-10-13 15:14:35 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [1000, 500, 100, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
+2024-10-13 15:14:36 INFO     ETM(
+  (encoder): ETMEncoder(
+    (fc): Stacklayers(
+      (layers): ModuleList(
+        (0): Linear(in_features=1000, out_features=1000, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=1000, out_features=500, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=500, out_features=100, bias=True)
+        (5): ReLU()
+        (6): Linear(in_features=100, out_features=15, bias=True)
+        (7): ReLU()
+      )
+    )
+    (z_mean): Linear(in_features=15, out_features=15, bias=True)
+    (z_lnvar): Linear(in_features=15, out_features=15, bias=True)
+  )
+  (decoder): ETMDecoder(
+    (lsmax): LogSoftmax(dim=-1)
+  )
+)
+2024-10-13 15:14:36 INFO     Starting training....
+2024-10-13 15:14:41 INFO     ====> Epoch: 0 Average loss: 6407.0958
+2024-10-13 15:14:54 INFO     ====> Epoch: 10 Average loss: 6244.5227
+2024-10-13 15:15:08 INFO     ====> Epoch: 20 Average loss: 6137.6718
+2024-10-13 15:15:21 INFO     ====> Epoch: 30 Average loss: 5997.0670
+2024-10-13 15:15:35 INFO     ====> Epoch: 40 Average loss: 6004.5780
+2024-10-13 15:15:48 INFO     ====> Epoch: 50 Average loss: 5904.2170
+2024-10-13 15:16:02 INFO     ====> Epoch: 60 Average loss: 5965.1542
+2024-10-13 15:16:16 INFO     ====> Epoch: 70 Average loss: 5943.6049
+2024-10-13 15:16:30 INFO     ====> Epoch: 80 Average loss: 5956.3819
+2024-10-13 15:16:44 INFO     ====> Epoch: 90 Average loss: 5965.5781
+2024-10-13 15:16:58 INFO     ====> Epoch: 100 Average loss: 5897.3451
+2024-10-13 15:22:18 INFO     Starting training...
+2024-10-13 15:22:18 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [1000, 500, 100, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
+2024-10-13 15:22:18 INFO     ETM(
+  (encoder): ETMEncoder(
+    (fc): Stacklayers(
+      (layers): ModuleList(
+        (0): Linear(in_features=1000, out_features=1000, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=1000, out_features=500, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=500, out_features=100, bias=True)
+        (5): ReLU()
+        (6): Linear(in_features=100, out_features=15, bias=True)
+        (7): ReLU()
+      )
+    )
+    (z_mean): Linear(in_features=15, out_features=15, bias=True)
+    (z_lnvar): Linear(in_features=15, out_features=15, bias=True)
+  )
+  (decoder): ETMDecoder(
+    (lsmax): LogSoftmax(dim=-1)
+  )
+)
+2024-10-13 15:22:18 INFO     Starting training....
+2024-10-13 15:22:22 INFO     ====> Epoch: 0 Average loss: 6407.0958
+2024-10-13 15:22:36 INFO     ====> Epoch: 10 Average loss: 6244.5227

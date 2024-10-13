@@ -35,7 +35,7 @@ class SparseDataset(Dataset):
 
 		return cell, self.label[idx]
 
-def nn_load_data(adata,device,bath_size):
+def nn_load_data(adata,device,batch_size):
 
 
 	device = torch.device(device)
@@ -49,5 +49,5 @@ def nn_load_data(adata,device,bath_size):
  
 	spdata = SparseData(indptr,indices,vals,shape,label)
 
-	return DataLoader(SparseDataset(spdata,device), batch_size=bath_size, shuffle=True)
+	return DataLoader(SparseDataset(spdata,device), batch_size=batch_size, shuffle=True)
 
