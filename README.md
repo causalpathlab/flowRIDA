@@ -1,1 +1,1 @@
-# Gene Celltype Attention Network (GCAN)
+# (FlowRIDA) Flow based RepresentatIon Disentanglement Analysis

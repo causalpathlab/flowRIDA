@@ -1,16 +1,16 @@
-2024-09-25 20:29:26 INFO     Starting training...
-2024-09-25 20:29:26 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [1000, 500, 100, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
-2024-09-25 20:29:28 INFO     ETM(
+2024-12-25 23:42:39 INFO     Starting training...
+2024-12-25 23:42:39 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [200, 100, 50, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
+2024-12-25 23:42:40 INFO     ETM(
   (encoder): ETMEncoder(
     (fc): Stacklayers(
       (layers): ModuleList(
-        (0): Linear(in_features=1000, out_features=1000, bias=True)
+        (0): Linear(in_features=1000, out_features=200, bias=True)
         (1): ReLU()
-        (2): Linear(in_features=1000, out_features=500, bias=True)
+        (2): Linear(in_features=200, out_features=100, bias=True)
         (3): ReLU()
-        (4): Linear(in_features=500, out_features=100, bias=True)
+        (4): Linear(in_features=100, out_features=50, bias=True)
         (5): ReLU()
-        (6): Linear(in_features=100, out_features=15, bias=True)
+        (6): Linear(in_features=50, out_features=15, bias=True)
         (7): ReLU()
       )
     )
@@ -21,121 +21,121 @@
     (lsmax): LogSoftmax(dim=-1)
   )
 )
-2024-09-25 20:29:28 INFO     Starting training....
-2024-09-25 20:29:28 INFO     ====> Epoch: 0 Average loss: 6407.0969
-2024-09-25 20:29:31 INFO     ====> Epoch: 10 Average loss: 6244.5253
-2024-09-25 20:29:34 INFO     ====> Epoch: 20 Average loss: 6137.6728
-2024-09-25 20:29:36 INFO     ====> Epoch: 30 Average loss: 5997.0680
-2024-09-25 20:29:39 INFO     ====> Epoch: 40 Average loss: 6004.5794
-2024-09-25 20:29:41 INFO     ====> Epoch: 50 Average loss: 5904.2170
-2024-09-25 20:29:44 INFO     ====> Epoch: 60 Average loss: 5965.1548
-2024-09-25 20:29:46 INFO     ====> Epoch: 70 Average loss: 5943.6052
-2024-09-25 20:29:49 INFO     ====> Epoch: 80 Average loss: 5956.3826
-2024-09-25 20:29:51 INFO     ====> Epoch: 90 Average loss: 5965.5789
-2024-09-25 20:29:54 INFO     ====> Epoch: 100 Average loss: 5897.3478
-2024-09-25 20:29:57 INFO     ====> Epoch: 110 Average loss: 5898.8559
-2024-09-25 20:29:59 INFO     ====> Epoch: 120 Average loss: 5852.4029
-2024-09-25 20:30:02 INFO     ====> Epoch: 130 Average loss: 5887.4171
-2024-09-25 20:30:04 INFO     ====> Epoch: 140 Average loss: 5857.2293
-2024-09-25 20:30:07 INFO     ====> Epoch: 150 Average loss: 5833.1837
-2024-09-25 20:30:10 INFO     ====> Epoch: 160 Average loss: 5844.3196
-2024-09-25 20:30:12 INFO     ====> Epoch: 170 Average loss: 5855.8793
-2024-09-25 20:30:15 INFO     ====> Epoch: 180 Average loss: 5848.1924
-2024-09-25 20:30:18 INFO     ====> Epoch: 190 Average loss: 5825.6655
-2024-09-25 20:30:20 INFO     ====> Epoch: 200 Average loss: 5845.3030
-2024-09-25 20:30:23 INFO     ====> Epoch: 210 Average loss: 5843.1579
-2024-09-25 20:30:26 INFO     ====> Epoch: 220 Average loss: 5806.9178
-2024-09-25 20:30:28 INFO     ====> Epoch: 230 Average loss: 5849.6405
-2024-09-25 20:30:31 INFO     ====> Epoch: 240 Average loss: 5818.7200
-2024-09-25 20:30:33 INFO     ====> Epoch: 250 Average loss: 5789.3781
-2024-09-25 20:30:36 INFO     ====> Epoch: 260 Average loss: 5802.1068
-2024-09-25 20:30:39 INFO     ====> Epoch: 270 Average loss: 5854.8646
-2024-09-25 20:30:41 INFO     ====> Epoch: 280 Average loss: 5835.2167
-2024-09-25 20:30:44 INFO     ====> Epoch: 290 Average loss: 5869.4206
-2024-09-25 20:30:46 INFO     ====> Epoch: 300 Average loss: 5842.3372
-2024-09-25 20:30:49 INFO     ====> Epoch: 310 Average loss: 5798.1628
-2024-09-25 20:30:52 INFO     ====> Epoch: 320 Average loss: 5837.4902
-2024-09-25 20:30:54 INFO     ====> Epoch: 330 Average loss: 5836.4174
-2024-09-25 20:30:57 INFO     ====> Epoch: 340 Average loss: 5863.3780
-2024-09-25 20:31:00 INFO     ====> Epoch: 350 Average loss: 5828.1689
-2024-09-25 20:31:02 INFO     ====> Epoch: 360 Average loss: 5787.2522
-2024-09-25 20:31:05 INFO     ====> Epoch: 370 Average loss: 5782.7553
-2024-09-25 20:31:08 INFO     ====> Epoch: 380 Average loss: 5893.7202
-2024-09-25 20:31:10 INFO     ====> Epoch: 390 Average loss: 5773.4943
-2024-09-25 20:31:13 INFO     ====> Epoch: 400 Average loss: 5794.0082
-2024-09-25 20:31:15 INFO     ====> Epoch: 410 Average loss: 5794.7667
-2024-09-25 20:31:18 INFO     ====> Epoch: 420 Average loss: 5777.4505
-2024-09-25 20:31:21 INFO     ====> Epoch: 430 Average loss: 5815.0658
-2024-09-25 20:31:23 INFO     ====> Epoch: 440 Average loss: 5780.5733
-2024-09-25 20:31:26 INFO     ====> Epoch: 450 Average loss: 5802.2134
-2024-09-25 20:31:29 INFO     ====> Epoch: 460 Average loss: 5830.6803
-2024-09-25 20:31:31 INFO     ====> Epoch: 470 Average loss: 5793.7213
-2024-09-25 20:31:34 INFO     ====> Epoch: 480 Average loss: 5802.9063
-2024-09-25 20:31:37 INFO     ====> Epoch: 490 Average loss: 5810.4710
-2024-09-25 20:31:39 INFO     ====> Epoch: 500 Average loss: 5778.4743
-2024-09-25 20:31:42 INFO     ====> Epoch: 510 Average loss: 5798.1703
-2024-09-25 20:31:44 INFO     ====> Epoch: 520 Average loss: 5841.9539
-2024-09-25 20:31:47 INFO     ====> Epoch: 530 Average loss: 5816.3028
-2024-09-25 20:31:49 INFO     ====> Epoch: 540 Average loss: 5808.4758
-2024-09-25 20:31:52 INFO     ====> Epoch: 550 Average loss: 5837.4536
-2024-09-25 20:31:54 INFO     ====> Epoch: 560 Average loss: 5794.2023
-2024-09-25 20:31:57 INFO     ====> Epoch: 570 Average loss: 5791.4214
-2024-09-25 20:32:00 INFO     ====> Epoch: 580 Average loss: 5787.0678
-2024-09-25 20:32:02 INFO     ====> Epoch: 590 Average loss: 5793.0747
-2024-09-25 20:32:05 INFO     ====> Epoch: 600 Average loss: 5813.9002
-2024-09-25 20:32:07 INFO     ====> Epoch: 610 Average loss: 5816.5786
-2024-09-25 20:32:10 INFO     ====> Epoch: 620 Average loss: 5839.5856
-2024-09-25 20:32:13 INFO     ====> Epoch: 630 Average loss: 5816.9029
-2024-09-25 20:32:15 INFO     ====> Epoch: 640 Average loss: 5757.4249
-2024-09-25 20:32:18 INFO     ====> Epoch: 650 Average loss: 5793.5680
-2024-09-25 20:32:21 INFO     ====> Epoch: 660 Average loss: 5791.2428
-2024-09-25 20:32:23 INFO     ====> Epoch: 670 Average loss: 5826.2519
-2024-09-25 20:32:26 INFO     ====> Epoch: 680 Average loss: 5797.3417
-2024-09-25 20:32:29 INFO     ====> Epoch: 690 Average loss: 5789.8085
-2024-09-25 20:32:31 INFO     ====> Epoch: 700 Average loss: 5816.3420
-2024-09-25 20:32:34 INFO     ====> Epoch: 710 Average loss: 5852.0974
-2024-09-25 20:32:37 INFO     ====> Epoch: 720 Average loss: 5833.3008
-2024-09-25 20:32:39 INFO     ====> Epoch: 730 Average loss: 5808.5730
-2024-09-25 20:32:42 INFO     ====> Epoch: 740 Average loss: 5804.3885
-2024-09-25 20:32:44 INFO     ====> Epoch: 750 Average loss: 5852.1163
-2024-09-25 20:32:47 INFO     ====> Epoch: 760 Average loss: 5825.4003
-2024-09-25 20:32:50 INFO     ====> Epoch: 770 Average loss: 5798.4144
-2024-09-25 20:32:52 INFO     ====> Epoch: 780 Average loss: 5784.7861
-2024-09-25 20:32:55 INFO     ====> Epoch: 790 Average loss: 5786.7109
-2024-09-25 20:32:58 INFO     ====> Epoch: 800 Average loss: 5803.7093
-2024-09-25 20:33:00 INFO     ====> Epoch: 810 Average loss: 5778.5551
-2024-09-25 20:33:03 INFO     ====> Epoch: 820 Average loss: 5819.8855
-2024-09-25 20:33:05 INFO     ====> Epoch: 830 Average loss: 5794.7509
-2024-09-25 20:33:08 INFO     ====> Epoch: 840 Average loss: 5845.9823
-2024-09-25 20:33:11 INFO     ====> Epoch: 850 Average loss: 5783.0674
-2024-09-25 20:33:13 INFO     ====> Epoch: 860 Average loss: 5783.5882
-2024-09-25 20:33:16 INFO     ====> Epoch: 870 Average loss: 5774.2137
-2024-09-25 20:33:19 INFO     ====> Epoch: 880 Average loss: 5807.9236
-2024-09-25 20:33:21 INFO     ====> Epoch: 890 Average loss: 5816.7873
-2024-09-25 20:33:24 INFO     ====> Epoch: 900 Average loss: 5759.5689
-2024-09-25 20:33:27 INFO     ====> Epoch: 910 Average loss: 5825.1337
-2024-09-25 20:33:29 INFO     ====> Epoch: 920 Average loss: 5858.6783
-2024-09-25 20:33:32 INFO     ====> Epoch: 930 Average loss: 5804.2254
-2024-09-25 20:33:34 INFO     ====> Epoch: 940 Average loss: 5770.2746
-2024-09-25 20:33:37 INFO     ====> Epoch: 950 Average loss: 5806.9227
-2024-09-25 20:33:40 INFO     ====> Epoch: 960 Average loss: 5776.6414
-2024-09-25 20:33:42 INFO     ====> Epoch: 970 Average loss: 5776.4616
-2024-09-25 20:33:45 INFO     ====> Epoch: 980 Average loss: 5764.9798
-2024-09-25 20:33:48 INFO     ====> Epoch: 990 Average loss: 5819.3299
-2024-09-25 20:33:50 INFO     Completed training...model saved in results/nn_gcan.model
-2024-09-25 20:33:50 INFO     Starting eval...
-2024-09-25 20:33:50 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [1000, 500, 100, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
-2024-09-25 20:33:50 INFO     ETM(
+2024-12-25 23:42:40 INFO     Starting training....
+2024-12-25 23:42:41 INFO     ====> Epoch: 0 Average loss: 6425.8051
+2024-12-25 23:42:44 INFO     ====> Epoch: 10 Average loss: 6207.8966
+2024-12-25 23:42:47 INFO     ====> Epoch: 20 Average loss: 6103.9733
+2024-12-25 23:42:50 INFO     ====> Epoch: 30 Average loss: 6036.4924
+2024-12-25 23:42:52 INFO     ====> Epoch: 40 Average loss: 5984.3684
+2024-12-25 23:42:55 INFO     ====> Epoch: 50 Average loss: 5971.9473
+2024-12-25 23:42:58 INFO     ====> Epoch: 60 Average loss: 5909.0185
+2024-12-25 23:43:01 INFO     ====> Epoch: 70 Average loss: 6009.8069
+2024-12-25 23:43:04 INFO     ====> Epoch: 80 Average loss: 5904.6669
+2024-12-25 23:43:07 INFO     ====> Epoch: 90 Average loss: 5882.9475
+2024-12-25 23:43:10 INFO     ====> Epoch: 100 Average loss: 5923.9007
+2024-12-25 23:43:13 INFO     ====> Epoch: 110 Average loss: 5853.8936
+2024-12-25 23:43:16 INFO     ====> Epoch: 120 Average loss: 5848.1144
+2024-12-25 23:43:19 INFO     ====> Epoch: 130 Average loss: 5865.4030
+2024-12-25 23:43:22 INFO     ====> Epoch: 140 Average loss: 5903.2361
+2024-12-25 23:43:25 INFO     ====> Epoch: 150 Average loss: 5853.2251
+2024-12-25 23:43:27 INFO     ====> Epoch: 160 Average loss: 5862.7181
+2024-12-25 23:43:30 INFO     ====> Epoch: 170 Average loss: 5897.9495
+2024-12-25 23:43:33 INFO     ====> Epoch: 180 Average loss: 5880.2229
+2024-12-25 23:43:36 INFO     ====> Epoch: 190 Average loss: 5848.6800
+2024-12-25 23:43:39 INFO     ====> Epoch: 200 Average loss: 5862.4764
+2024-12-25 23:43:42 INFO     ====> Epoch: 210 Average loss: 5846.4536
+2024-12-25 23:43:45 INFO     ====> Epoch: 220 Average loss: 5837.8461
+2024-12-25 23:43:48 INFO     ====> Epoch: 230 Average loss: 5814.6039
+2024-12-25 23:43:50 INFO     ====> Epoch: 240 Average loss: 5872.1215
+2024-12-25 23:43:53 INFO     ====> Epoch: 250 Average loss: 5799.9222
+2024-12-25 23:43:56 INFO     ====> Epoch: 260 Average loss: 5795.6371
+2024-12-25 23:43:59 INFO     ====> Epoch: 270 Average loss: 5832.3145
+2024-12-25 23:44:02 INFO     ====> Epoch: 280 Average loss: 5812.9826
+2024-12-25 23:44:05 INFO     ====> Epoch: 290 Average loss: 5812.2038
+2024-12-25 23:44:08 INFO     ====> Epoch: 300 Average loss: 5831.5262
+2024-12-25 23:44:11 INFO     ====> Epoch: 310 Average loss: 5818.0606
+2024-12-25 23:44:14 INFO     ====> Epoch: 320 Average loss: 5829.9587
+2024-12-25 23:44:17 INFO     ====> Epoch: 330 Average loss: 5844.2756
+2024-12-25 23:44:20 INFO     ====> Epoch: 340 Average loss: 5792.2211
+2024-12-25 23:44:22 INFO     ====> Epoch: 350 Average loss: 5808.6575
+2024-12-25 23:44:25 INFO     ====> Epoch: 360 Average loss: 5842.2771
+2024-12-25 23:44:28 INFO     ====> Epoch: 370 Average loss: 5838.1117
+2024-12-25 23:44:31 INFO     ====> Epoch: 380 Average loss: 5855.6181
+2024-12-25 23:44:34 INFO     ====> Epoch: 390 Average loss: 5877.7766
+2024-12-25 23:44:37 INFO     ====> Epoch: 400 Average loss: 5822.0863
+2024-12-25 23:44:40 INFO     ====> Epoch: 410 Average loss: 5817.9909
+2024-12-25 23:44:42 INFO     ====> Epoch: 420 Average loss: 5823.6531
+2024-12-25 23:44:45 INFO     ====> Epoch: 430 Average loss: 5824.4828
+2024-12-25 23:44:48 INFO     ====> Epoch: 440 Average loss: 5814.5821
+2024-12-25 23:44:51 INFO     ====> Epoch: 450 Average loss: 5777.1039
+2024-12-25 23:44:54 INFO     ====> Epoch: 460 Average loss: 5802.7195
+2024-12-25 23:44:57 INFO     ====> Epoch: 470 Average loss: 5778.4030
+2024-12-25 23:45:00 INFO     ====> Epoch: 480 Average loss: 5769.6980
+2024-12-25 23:45:03 INFO     ====> Epoch: 490 Average loss: 5839.6153
+2024-12-25 23:45:06 INFO     ====> Epoch: 500 Average loss: 5863.8268
+2024-12-25 23:45:08 INFO     ====> Epoch: 510 Average loss: 5808.5012
+2024-12-25 23:45:11 INFO     ====> Epoch: 520 Average loss: 5805.6171
+2024-12-25 23:45:14 INFO     ====> Epoch: 530 Average loss: 5811.9404
+2024-12-25 23:45:17 INFO     ====> Epoch: 540 Average loss: 5765.0512
+2024-12-25 23:45:20 INFO     ====> Epoch: 550 Average loss: 5849.8477
+2024-12-25 23:45:23 INFO     ====> Epoch: 560 Average loss: 5828.2294
+2024-12-25 23:45:26 INFO     ====> Epoch: 570 Average loss: 5767.1731
+2024-12-25 23:45:29 INFO     ====> Epoch: 580 Average loss: 5776.1539
+2024-12-25 23:45:32 INFO     ====> Epoch: 590 Average loss: 5804.8354
+2024-12-25 23:45:35 INFO     ====> Epoch: 600 Average loss: 5842.0503
+2024-12-25 23:45:38 INFO     ====> Epoch: 610 Average loss: 5806.0793
+2024-12-25 23:45:41 INFO     ====> Epoch: 620 Average loss: 5819.6593
+2024-12-25 23:45:44 INFO     ====> Epoch: 630 Average loss: 5792.5793
+2024-12-25 23:45:46 INFO     ====> Epoch: 640 Average loss: 5834.8717
+2024-12-25 23:45:49 INFO     ====> Epoch: 650 Average loss: 5774.3234
+2024-12-25 23:45:52 INFO     ====> Epoch: 660 Average loss: 5802.5437
+2024-12-25 23:45:55 INFO     ====> Epoch: 670 Average loss: 5800.7767
+2024-12-25 23:45:58 INFO     ====> Epoch: 680 Average loss: 5842.5084
+2024-12-25 23:46:01 INFO     ====> Epoch: 690 Average loss: 5762.4349
+2024-12-25 23:46:04 INFO     ====> Epoch: 700 Average loss: 5795.9946
+2024-12-25 23:46:07 INFO     ====> Epoch: 710 Average loss: 5874.6022
+2024-12-25 23:46:10 INFO     ====> Epoch: 720 Average loss: 5799.9076
+2024-12-25 23:46:13 INFO     ====> Epoch: 730 Average loss: 5864.5827
+2024-12-25 23:46:16 INFO     ====> Epoch: 740 Average loss: 5805.6353
+2024-12-25 23:46:19 INFO     ====> Epoch: 750 Average loss: 5776.1105
+2024-12-25 23:46:21 INFO     ====> Epoch: 760 Average loss: 5784.3582
+2024-12-25 23:46:24 INFO     ====> Epoch: 770 Average loss: 5782.5448
+2024-12-25 23:46:27 INFO     ====> Epoch: 780 Average loss: 5831.0786
+2024-12-25 23:46:30 INFO     ====> Epoch: 790 Average loss: 5806.5716
+2024-12-25 23:46:32 INFO     ====> Epoch: 800 Average loss: 5795.7792
+2024-12-25 23:46:35 INFO     ====> Epoch: 810 Average loss: 5853.7824
+2024-12-25 23:46:38 INFO     ====> Epoch: 820 Average loss: 5801.8255
+2024-12-25 23:46:41 INFO     ====> Epoch: 830 Average loss: 5838.6226
+2024-12-25 23:46:44 INFO     ====> Epoch: 840 Average loss: 5812.6405
+2024-12-25 23:46:47 INFO     ====> Epoch: 850 Average loss: 5789.9877
+2024-12-25 23:46:50 INFO     ====> Epoch: 860 Average loss: 5782.2679
+2024-12-25 23:46:53 INFO     ====> Epoch: 870 Average loss: 5770.7904
+2024-12-25 23:46:56 INFO     ====> Epoch: 880 Average loss: 5768.2329
+2024-12-25 23:46:59 INFO     ====> Epoch: 890 Average loss: 5780.8973
+2024-12-25 23:47:02 INFO     ====> Epoch: 900 Average loss: 5789.8064
+2024-12-25 23:47:05 INFO     ====> Epoch: 910 Average loss: 5813.7860
+2024-12-25 23:47:08 INFO     ====> Epoch: 920 Average loss: 5806.2103
+2024-12-25 23:47:10 INFO     ====> Epoch: 930 Average loss: 5787.4872
+2024-12-25 23:47:13 INFO     ====> Epoch: 940 Average loss: 5802.0751
+2024-12-25 23:47:16 INFO     ====> Epoch: 950 Average loss: 5815.9834
+2024-12-25 23:47:19 INFO     ====> Epoch: 960 Average loss: 5886.1320
+2024-12-25 23:47:22 INFO     ====> Epoch: 970 Average loss: 5783.3106
+2024-12-25 23:47:25 INFO     ====> Epoch: 980 Average loss: 5780.4149
+2024-12-25 23:47:28 INFO     ====> Epoch: 990 Average loss: 5817.4954
+2024-12-25 23:47:31 INFO     Completed training...model saved in results/nn_gcan.model
+2024-12-25 23:47:31 INFO     Starting eval...
+2024-12-25 23:47:31 INFO     {'device': 'cuda', 'input_dim': 1000, 'latent_dim': 15, 'layers': [200, 100, 50, 15], 'learning_rate': 0.001, 'epochs': 1000, 'batch_size': 128}
+2024-12-25 23:47:31 INFO     ETM(
   (encoder): ETMEncoder(
     (fc): Stacklayers(
       (layers): ModuleList(
-        (0): Linear(in_features=1000, out_features=1000, bias=True)
+        (0): Linear(in_features=1000, out_features=200, bias=True)
         (1): ReLU()
-        (2): Linear(in_features=1000, out_features=500, bias=True)
+        (2): Linear(in_features=200, out_features=100, bias=True)
         (3): ReLU()
-        (4): Linear(in_features=500, out_features=100, bias=True)
+        (4): Linear(in_features=100, out_features=50, bias=True)
         (5): ReLU()
-        (6): Linear(in_features=100, out_features=15, bias=True)
+        (6): Linear(in_features=50, out_features=15, bias=True)
         (7): ReLU()
       )
     )
@@ -146,4 +146,3 @@
     (lsmax): LogSoftmax(dim=-1)
   )
 )
-2024-09-25 20:34:36 INFO     Fontsize 0.00 < 1.0 pt not allowed by FreeType. Setting fontsize = 1 pt
