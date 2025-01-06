@@ -9,8 +9,8 @@ Makefile
 .vscode/
 .snakemake/
 
-/znode/*/data
-/znode/*/results
+/znode/*/data/*
+/znode/*/results/*
 
 
 

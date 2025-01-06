@@ -74,48 +74,5 @@ class ETM(nn.Module):
 	def forward(self,xx):
 		zz,m,v = self.encoder(xx)
 		bm,bv,theta,beta = self.decoder(zz)
-		return m,v,bm,bv,theta,beta
+		return m,v,bm,bv,theta,beta,zz
 
-def train(etm,data,epochs,l_rate):
-	logger.info('Starting training....')
-	opt = torch.optim.Adam(etm.parameters(),lr=l_rate)
-	loss_values = []
-	data_size = data.dataset.shape[0]
-	for epoch in range(epochs):
-		loss = 0
-		loss_ll = 0
-		loss_kl = 0
-		loss_klb = 0
-		for x,y in data:
-			opt.zero_grad()
-			m,v,bm,bv,theta,beta = etm(x)
-			alpha = torch.exp(torch.clamp(torch.mm(theta,beta),-10,10))
-			loglikloss = st.multi_dir_log_likelihood(x,alpha)
-			kl = st.kl_loss(m,v)
-			klb = st.kl_loss(bm,bv)
-
-			train_loss = torch.mean(kl -loglikloss).add(torch.sum(klb)/data_size)
-			train_loss.backward()
-
-			opt.step()
-
-			ll_l = torch.mean(loglikloss).to('cpu')
-			kl_l = torch.mean(kl).to('cpu')
-			klb_l = torch.sum(klb).to('cpu')
-
-			loss += train_loss.item()
-			loss_ll += ll_l.item()
-			loss_kl += kl_l.item()
-			loss_klb += klb_l.item()/data_size
-
-		if epoch % 10 == 0:
-			logger.info('====> Epoch: {} Average loss: {:.4f}'.format(epoch, loss/len(data)))
-
-		loss_values.append([loss/len(data),loss_ll/len(data),loss_kl/len(data),loss_klb/len(data)])
-
-
-	return loss_values
-
-def predict_batch(model,x_sc,y):
-	m,v,bm,bv,theta,beta =  model(x_sc)
-	return theta,beta,y
